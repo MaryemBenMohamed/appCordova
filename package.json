@@ -25,5 +25,8 @@
     "platforms": [
       "android"
     ]
+  },
+  "dependencies": {
+    "firebase": "^8.2.1"
   }
 }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+    <script src="js/Form.js"></script>
+    <style>
+
+	     .Formulaire{
+	        width:50%;
+	        margin-top:7%;
+	     }
+	     .welcome{
+	        margin-top:10%;
+	        font-size: 40px;
+	     }
+	     h1{
+	     text-align:center;
+	     }
+
+    </style>
+</head>
+<body>
+
+<div data-role="page" id="Form">
+    <h1 class="Welcome">Welcome to Foody!</h1>
+    <div data-role="content">
+        <h2>Sign in </h2>
+        <form method="POST" action="Home.html">
+            <label for="Email">Email adresse:</label>
+            <input type="email" name="login" id="Email" required>
+            <label for="Password">Password:</label>
+            <input type="password" name="pwd" id="Password" required>
+            <fieldset class="ui-grid-a">
+                <input type="submit" value="submit" onclick="signIn()" rel="external">
+
+
+
+            </fieldset>
+        </form>
+        <p>Not a member yet ? Become a member : </p>
+        <div class="ui-block-b"><a href="Signup.html" data-role="button" data-theme="a" rel="external">Sign up </a></div>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
