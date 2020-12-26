@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lemon Cake </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header" >
+        <h1>Lemon Cake </h1>
+        <a href="Cakes.html" rel="external" data-icon="back">Back</a>
+
+    </div>
+    <div role="main" class="ui-content">
+        <img src="img/lemon.jpg" style="width:100%" >
+        <h1>Ingredient</h1>
+        <hr>
+        <ul data-role="listview" data-inset="true">
+            <li>1 2/3 cups (200 g) plain gluten free flour blend</li>
+            <li>3/4 cup (65 g) almond flour</li>
+            <li>1/2 tsp xanthan gum</li>
+            <li>3 tsp baking powder</li>
+            <li>1 cup (200 g) granulated sugar</li>
+            <li>pinch of salt</li>
+            <li>2 sticks (226 g) unsalted butter, softened</li>
+            <li>zest of 3 lemons</li>
+            <li>4 medium eggs, room temperature</li>
+            <li>1/2 cup (120 mL) milk, room temperature</li>
+            <li>1 tsp vanilla paste</li>
+            <li>6 tbsp lemon juice</li>
+        </ul>
+
+        <h1>Preparation steps</h1>
+        <hr>
+        <ol data-role="none" data-autodividers="false">
+            <li>Pre-heat the oven to 355 ºF (180 ºC) and line a loaf baking tin with greaseproof/baking paper. (Dimensions of loaf tin: 8.5 inch/21cm long, 4.5 inch/11cm wide and 3inch/7cm high.)</li>
+            <li>In a large bowl, sift together the gluten free flour blend, almond flour, xanthan gum and baking powder. Add the sugar and salt, and mix until combined.</li>
+            <li>Add the softened butter and, using either a stand mixer with the paddle attachment or a hand mixer with the double beater attachments, work the butter into the dry ingredients until you get a texture resembling coarse breadcrumbs in size</li>
+            <li>Add the lemon zest. In a separate bowl, mix together the eggs, milk, vanilla and lemon juice. Add the wet ingredients to the dry+butter mixture, and whisk/mix well until no flour clumps remain and everything is evenly distributed.</li>
+            <li>Transfer the cake batter into the prepared loaf tin, smooth out the top, and bake in the pre-heated oven at 355 ºF (180 ºC) for about 1 hour or until risen, golden brown on top and an inserted toothpick comes out clean.</li>
+            <li>Allow to cool in the loaf tin for about 10 minutes, then remove from the tin, and allow to cool completely on a cooling rack.</li>
+
+        </ol>
+
+
+    </div>
+
+    <div data-role="footer"data-position="fixed" data-id="foot">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="Home.html" data-icon="home" rel="external" >Home</a></li>
+                <li><a href="Favorites.html" data-icon="heart" rel="external" >Favorits</a></li>
+                <li><a href="MyCalendar.html" data-icon="calendar" rel="external">My Calendar</a></li>
+                <li><a href="Preferences.html" data-icon="gear" rel="external">Preferences</a></li>
+            </ul>
+        </div>
+    </div>
+    <a  class="ui-btn" onclick="OpenBrowser()">See video</a>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+     function OpenBrowser() {
+        var ref = cordova.InAppBrowser.open('https://theloopywhisk.com/2019/01/12/perfect-lemon-drizzle-cake/', '_blank', 'location=yes');
+        }
+    </script>
+
+</div>
+
+</body>
+</html>
