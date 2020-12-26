@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cocktail Juice</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header">
+        <h1>Cocktail Juice</h1>
+        <a href="Cold_Drinks.html" rel="external" data-icon="back">Back</a>
+    </div>
+    <div role="main" class="ui-content">
+        <img src="img/coktail.jpg" style="width:100%" >
+        <h1>Ingredient</h1>
+        <hr>
+        <ul data-role="listview" data-inset="true">
+
+            <li>Apples, preferably red ones</li>
+            <li>Mango</li>
+            <li>Passion fruit</li>
+
+        </ul>
+
+        <h1>Preparation steps</h1>
+        <hr>
+        <ol data-role="none" data-autodividers="false">
+            <li>Wash the apples, peel the mango and remove the stone.</li>
+            <li>Cut the mango and apples into even pieces.</li>
+            <li>Slice the passion fruit in half, scoop out the flesh and discard the seeds.</li>
+            <li>Juice all the ingredients.</li>
+            <li>Pour juice into a glass and add a couple of ice cubes.</li>
+
+        </ol>
+
+
+    </div>
+
+    <div data-role="footer"data-position="fixed" data-id="foot">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="Home.html" data-icon="home" rel="external" >Home</a></li>
+                <li><a href="Favorits.html" data-icon="heart" rel="external" >Favorites</a></li>
+                <li><a href="MyCalendar.html" data-icon="calendar" rel="external">My Calendar</a></li>
+                <li><a href="Preferences.html" data-icon="gear" rel="external">Preferences</a></li>
+            </ul>
+        </div>
+    </div>
+    <a  class="ui-btn" onclick="OpenBrowser()">See video</a>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+     function OpenBrowser() {
+        var ref = cordova.InAppBrowser.open('https://www.youtube.com/watch?v=7lMYtkYYAXw', '_blank', 'location=yes');
+        }
+    </script>
+</div>
+
+</body>
+</html>

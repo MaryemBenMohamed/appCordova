@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kiwi Juice</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header">
+        <h1>Kiwi Juice</h1>
+        <a href="Cold_Drinks.html" rel="external" data-icon="back">Back</a>
+    </div>
+    <div role="main" class="ui-content">
+        <img src="img/Kiwijuice.jpg" style="width:100%" >
+        <h1>Ingredient</h1>
+        <hr>
+        <ul data-role="listview" data-inset="true">
+
+            <li>3 kiwi</li>
+            <li>4-5 ice cubes or a handful</li>
+            <li>1.5 tsp sugar or honey</li>
+            <li>1/2 cup water</li>
+
+        </ul>
+
+        <h1>Preparation steps</h1>
+        <hr>
+        <ol data-role="none" data-autodividers="false">
+            <li>Peel the kiwi fruit well with the help of a peeler.</li>
+            <li>Make small slices of the fruit with a knife.</li>
+            <li>Add the slices of the kiwi into a juice blender.</li>
+            <li>Add ice cubes, sugar/honey, little water.</li>
+            <li>Blend the juice finely.</li>
+            <li>Take serving glasses and pour the juice directly without straining.</li>
+            <li>Garnish the juice with round slices of kiwi over the juice.</li>
+            <li>Serve the juice chilled and fresh.</li>
+
+        </ol>
+
+
+    </div>
+
+    <div data-role="footer"data-position="fixed" data-id="foot">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="Home.html" data-icon="home" rel="external" >Home</a></li>
+                <li><a href="Favorits.html" data-icon="heart" rel="external" >Favorites</a></li>
+                <li><a href="MyCalendar.html" data-icon="calendar" rel="external">My Calendar</a></li>
+                <li><a href="Preferences.html" data-icon="gear" rel="external">Preferences</a></li>
+            </ul>
+        </div>
+    </div>
+    <a  class="ui-btn" onclick="OpenBrowser()">See video</a>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+     function OpenBrowser() {
+        var ref = cordova.InAppBrowser.open('https://www.youtube.com/watch?v=YmZiapqj-5M', '_blank', 'location=yes');
+        }
+    </script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hot Chocolate</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header">
+        <h1>Hot Chocolate</h1>
+        <a href="Hot_Drinks.html" rel="external" data-icon="back">Back</a>
+    </div>
+    <div role="main" class="ui-content">
+        <img src="img/hotchocolate.jpg" style="width:100%" >
+        <h1>Ingredient</h1>
+        <hr>
+        <ul data-role="listview" data-inset="true">
+            <li>60 g dark chocolate/li>
+            <li>1 tablespoon of bitter cocoa</li>
+            <li>40 cl of milk</li>
+            <li>10 cl of liquid cream</li>
+            <li>20g sugar</li>
+
+        </ul>
+
+        <h1>Preparation steps</h1>
+        <hr>
+        <ol data-role="none" data-autodividers="false">
+            <li>In a saucepan, pour the milk, cream and sugar. Boil the water.</li>
+            <li>Off the heat, add the dark chocolate and cocoa powder, then whisk vigorously until the mixture is smooth.</li>
+            <li>Pour immediately into cups or bowls.</li>
+
+        </ol>
+
+
+    </div>
+
+    <div data-role="footer"data-position="fixed" data-id="foot">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="Home.html" data-icon="home" rel="external" >Home</a></li>
+                <li><a href="Favorits.html" data-icon="heart" rel="external" >Favorites</a></li>
+                <li><a href="MyCalendar.html" data-icon="calendar" rel="external">My Calendar</a></li>
+                <li><a href="Preferences.html" data-icon="gear" rel="external">Preferences</a></li>
+            </ul>
+        </div>
+    </div>
+    <a  class="ui-btn" onclick="OpenBrowser()">See video</a>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+     function OpenBrowser() {
+        var ref = cordova.InAppBrowser.open('https://www.youtube.com/watch?v=ZGt0pJ0BEHM', '_blank', 'location=yes');
+        }
+    </script>
+</div>
+
+</body>
+</html>

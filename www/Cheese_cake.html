@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cheese Cake  </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header">
+        <h1>Cheese Cake </h1>
+        <a href="Cakes.html" rel="external" data-icon="back">Back</a>
+    </div>
+    <div role="main" class="ui-content">
+        <img src="img/cheesecake.jpeg" style="width:100%" >
+        <h1>Ingredient</h1>
+        <hr>
+        <ul data-role="listview" data-inset="true">
+
+            <li>330 g of Philadephia cheese</li>
+            <li>250 g of speculoos</li>
+            <li>110 g sugar</li>
+            <li>the juice of 4 lemons</li>
+            <li>raspberry coulis (to serve)</li>
+            <li>330 g cheese</li>
+            <li>120g fresh raspberries, plus a few for garnish</li>
+            <li>90 g melted butter</li>
+            <li>1 vanilla pod</li>
+
+        </ul>
+
+
+        <h1>Preparation steps</h1>
+        <hr>
+        <ol data-role="none" data-autodividers="false">
+            <li>Preheat your oven to (160 ° C)</li>
+            <li>Place the speculoos in the bowl of the Thermomix and reduce them to a powder by mixing them for 10 sec, speed 5. Pour the melted butter into the bowl and mix for 10 sec, speed 5. Place in the bottom of a buttered springform pan. Reserve in the refrigerator.</li>
+            <li>Prepare the cheesecake by mixing the cheese and sugar for 30 sec, speed 5.</li>
+            <li>Insert the whisk into the food processor, add the eggs then beat 40 sec, speed 4</li>
+            <li>Add the lemon juice and mix again for 40 sec, speed 4.</li>
+            <li>Add the raspberries to the bowl of the Thermomix. Stir with the spatula to incorporate them without crushing them</li>
+            <li>
+                Pour the preparation into the springform pan. Bake for 50 min of cooking on th. 5-6 (160 ° C). Let cool completely in the refrigerator before eating</li>
+
+
+        </ol>
+
+
+    </div>
+
+    <div data-role="footer"data-position="fixed" data-id="foot">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="Home.html" data-icon="home" rel="external" >Home</a></li>
+                <li><a href="Favorits.html" data-icon="heart" rel="external" >Favorites</a></li>
+                <li><a href="MyCalendar.html" data-icon="calendar" rel="external">My Calendar</a></li>
+                <li><a href="Preferences.html" data-icon="gear" rel="external">Preferences</a></li>
+            </ul>
+        </div>
+    </div>
+    <a  class="ui-btn" onclick="OpenBrowser()">See video</a>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+     function OpenBrowser() {
+        var ref = cordova.InAppBrowser.open('https://www.youtube.com/watch?v=FC5GwGRIpA0', '_blank', 'location=yes');
+        }
+    </script>
+</div>
+
+</body>
+</html>

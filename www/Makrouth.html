@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Makrouth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header" >
+        <h1>Makrouth</h1>
+        <a href="Traditionals.html" rel="external" data-icon="back">Back</a>
+
+    </div>
+    <div role="main" class="ui-content">
+        <img src="img/makrouth.png" style="width:100%" >
+        <h1>Ingredient</h1>
+        <hr>
+        <ul data-role="listview" data-inset="true">
+            <li>2 bowls of medium semolina, 1 bowl of butter, 1 pinch of salt, 1 bowl of water, oil for frying.</li>
+            <li>2 cups of dates paste, 1 small cup of caster sugar, 1 tablespoon of cinnamon powder, 3 tablespoons of orange blossom water, honey.</li>
+
+        </ul>
+
+        <h1>Preparation steps</h1>
+        <hr>
+        <ol data-role="none" data-autodividers="false">
+            <li>Mix the semolina, butter, salt..</li>
+            <li>Add lukewarm water and work until you obtain a homogeneous and smooth dough. Leave to rest for a few moments.</li>
+            <li>Prepare the stuffing with the date paste, sugar, cinnamon, orange blossom water, mix well.</li>
+            <li>Then take the semolina dough, divide it into a small heap, which is molded into small sausages, split them in the middle, then insert small sticks of stuffing into the slot, weld the opening of the roll again to smooth it .</li>
+            <li>Then cut it into a diamond shape and fry in a large deep fryer (preferably in a deep fryer). Brown both sides and remove with a skimmer, let drain then soak in honey or sugar syrup (in a saucepan mix water + caster sugar + lemon juice for taste. The syrup is ready when a drop of syrup placed on a plate holds without crushing).</li>
+
+
+        </ol>
+    </div>
+
+    <div data-role="footer"data-position="fixed" data-id="foot">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="Home.html" data-icon="home" rel="external" >Home</a></li>
+                <li><a href="Favorits.html" data-icon="heart" rel="external" >Favorites</a></li>
+                <li><a href="MyCalendar.html" data-icon="calendar" rel="external">My Calendar</a></li>
+                <li><a href="Preferences.html" data-icon="gear" rel="external">Preferences</a></li>
+            </ul>
+        </div>
+    </div>
+    <a  class="ui-btn" onclick="OpenBrowser()">See video</a>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+     function OpenBrowser() {
+        var ref = cordova.InAppBrowser.open('https://www.youtube.com/watch?v=KDa0YsiWXR0&ab_channel=LaCuisinedeLynoucha', '_blank', 'location=yes');
+        }
+    </script>
+</div>
+
+</body>
+</html>

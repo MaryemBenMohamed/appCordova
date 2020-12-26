@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grilled Salad</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header">
+        <h1>Grilled Salad</h1>
+        <a href="Entrees.html" rel="external" data-icon="back">Back</a>
+    </div>
+    <div role="main" class="ui-content">
+        <img src="img/SaladeGrillesTunisienne.jpg" style="width:100%" >
+        <h1>Ingredient</h1>
+        <hr>
+        <ul data-role="listview" data-inset="true">
+
+            <li> ½ tsp caraway seeds, whole</li>
+            <li>250 g green pepper</li>
+            <li>100 g red chilli</li>
+            <li>2 garlic : 2 cloves</li>
+            <li>2 tomatoes</li>
+            <li>5 Tbsp olive oil</li>
+
+        </ul>
+
+        <h1>Preparation steps</h1>
+        <hr>
+        <ol data-role="none" data-autodividers="false">
+            <li>Grill the green peppers until the skins are blackended. If you have a gas stove you can char the skins over one of the rings. Set aside then peel and core when they are cool enough to handle.</li>
+            <li> Meanwhile place the chilli, garlic and tomatoes in a roasting dish and roast in a hot oven until the garlic is soft. You can remove the skins from the tomatoes and de-seed the chilli at this point if you wish.</li>
+            <li>Place all the vegetables in a blender or food processor - alternatively strain through a sieve.</li>
+            <li>Gently heat the caraway seeds and oil in a frying pan until fragrant. Then add to the vegetables and whiz to a paste.</li>
+            <li>Chill before serving. Serve in a bowl with quarters of hard boiled eggs, chunks of tuna fish or black olives.</li>
+
+        </ol>
+
+
+    </div>
+
+    <div data-role="footer"data-position="fixed" data-id="foot">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="Home.html" data-icon="home" rel="external" >Home</a></li>
+                <li><a href="Favorits.html" data-icon="heart" rel="external" >Favorites</a></li>
+                <li><a href="MyCalendar.html" data-icon="calendar" rel="external">My Calendar</a></li>
+                <li><a href="Preferences.html" data-icon="gear" rel="external">Preferences</a></li>
+            </ul>
+        </div>
+    </div>
+    <a  class="ui-btn" onclick="OpenBrowser()">See video</a>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+     function OpenBrowser() {
+        var ref = cordova.InAppBrowser.open('https://www.youtube.com/watch?v=mFYIYIqcscQ', '_blank', 'location=yes');
+        }
+    </script>
+</div>
+
+</body>
+</html>

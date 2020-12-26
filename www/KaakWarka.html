@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kaak warka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header" >
+        <h1>Kaak warka </h1>
+        <a href="Traditionals.html" rel="external" data-icon="back">Back</a>
+
+    </div>
+    <div role="main" class="ui-content">
+        <img src="img/Kaakwarka.jpg" style="width:100%" >
+        <h1>Ingredient</h1>
+        <hr>
+        <ul data-role="listview" data-inset="true">
+            <li>1 kg of flour</li>
+            <li>400 gr of butter</li>
+            <li>450 gr rose water</li>
+            <li>500 gr fine almond powder</li>
+            <li>200 gr of icing sugar</li>
+        </ul>
+
+        <h1>Preparation steps</h1>
+        <hr>
+        <ol data-role="none" data-autodividers="false">
+            <li>Preparation of the Dough: Mix the flour with the softened butter (at room temperature).</li>
+            <li>Add 350 g of rose water and knead until a smooth dough is obtained. Leave to rest for a few hours.</li>
+            <li>Preparation of the almond filling: Combine the almond powder and the sugar together then incorporate 100 g of rose water in order to obtain a homogeneous texture.</li>
+            <li>Roll out the dough in a thin layer (1mm thick) using a rolling pin.</li>
+            <li>Form the stuffing into small sausages (5cm).</li>
+            <li>Roll up the stuffing with the dough.</li>
+            <li>Assemble the two ends to form a round washer.</li>
+            <li>Bake at 180 ° for 10 minutes.</li>
+
+
+        </ol>
+    </div>
+
+    <div data-role="footer"data-position="fixed" data-id="foot">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="Home.html" data-icon="home" rel="external" >Home</a></li>
+                <li><a href="Favorits.html" data-icon="heart" rel="external" >Favorites</a></li>
+                <li><a href="MyCalendar.html" data-icon="calendar" rel="external">My Calendar</a></li>
+                <li><a href="Preferences.html" data-icon="gear" rel="external">Preferences</a></li>
+            </ul>
+        </div>
+    </div>
+    <a  class="ui-btn" onclick="OpenBrowser()">See video</a>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+     function OpenBrowser() {
+        var ref = cordova.InAppBrowser.open('https://www.youtube.com/watch?v=8G25SLcCl9Y&ab_channel=TopSaveurs', '_blank', 'location=yes');
+        }
+    </script>
+</div>
+
+</body>
+</html>

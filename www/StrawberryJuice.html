@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Strawberry Juice</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header">
+        <h1>Strawberry Juice</h1>
+        <a href="Cold_Drinks.html" rel="external" data-icon="back">Back</a>
+    </div>
+    <div role="main" class="ui-content">
+        <img src="img/strawberryjuice.jpg" style="width:100%" >
+        <h1>Ingredient</h1>
+        <hr>
+        <ul data-role="listview" data-inset="true">
+
+            <li>2- pounds fresh strawberries , cleaned and halved</li>
+            <li>2- cups sugar</li>
+            <li>glass bottle</li>
+            <li>water or soda water</li>
+
+        </ul>
+
+        <h1>Preparation steps</h1>
+        <hr>
+        <ol data-role="none" data-autodividers="false">
+            <li>Place half of the strawberries in a large bowl; cover with 1-cup of sugar.</li>
+            <li>Add the remaining strawberries and sprinkle with the rest of the sugar.</li>
+            <li>Cover the bowl and place in the fridge for 24 hours.</li>
+            <li>Transfer the berries and the juice into a large saucepan.</li>
+            <li>Over medium-high heat, bring the mixture to a boil; turn the heat down and continue to simmer for 30 minutes.</li>
+            <li>Remove from heat and strain the mixture through a fine mesh strainer into a large bowl.</li>
+            <li>Using a spatula, press the strawberries to release all the juices.</li>
+            <li>In the meantime, preheat oven to 170.</li>
+            <li>Wash the glass bottle; place it on a baking sheet and put it in the oven for 30 minutes.</li>
+            <li>Sterilize the cap of the bottle by placing it in a bowl and pour boiling water right over it.</li>
+            <li>Remove glass bottle from the oven.</li>
+            <li>Pour the juice into the bottle.</li>
+            <li>Seal with the cap and let completely cool.</li>
+            <li>Store in refrigerator.</li>
+
+        </ol>
+
+
+    </div>
+
+    <div data-role="footer"data-position="fixed" data-id="foot">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="Home.html" data-icon="home" rel="external" >Home</a></li>
+                <li><a href="Favorits.html" data-icon="heart" rel="external" >Favorites</a></li>
+                <li><a href="MyCalendar.html" data-icon="calendar" rel="external">My Calendar</a></li>
+                <li><a href="Preferences.html" data-icon="gear" rel="external">Preferences</a></li>
+            </ul>
+        </div>
+    </div>
+    <a  class="ui-btn" onclick="OpenBrowser()">See video</a>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+     function OpenBrowser() {
+        var ref = cordova.InAppBrowser.open('https://www.youtube.com/watch?v=N5E-FzDV44s', '_blank', 'location=yes');
+        }
+    </script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Green Tea</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header">
+        <h1>Green Tea</h1>
+        <a href="Hot_Drinks.html" rel="external" data-icon="back">Back</a>
+    </div>
+    <div role="main" class="ui-content">
+        <img src="img/greentea.jpg" style="width:100%" >
+        <h1>Ingredient</h1>
+        <hr>
+        <ul data-role="listview" data-inset="true">
+
+            <li>2 teaspoons Green tea leaves</li>
+            <li>2 cups Water</li>
+            <li>Honey , (optional) to taste</li>
+
+        </ul>
+
+        <h1>Preparation steps</h1>
+        <hr>
+        <ol data-role="none" data-autodividers="false">
+            <li>To begin making Green Tea Recipe, take a saucepan and start heating water on a high heat.</li>
+            <li>Once the water starts boiling, turn off the heat and add the green tea leaves.</li>
+            <li>Keep it covered for a minute.</li>
+            <li>Strain the green tea into the tea cups.Add honey to taste (only as a sweetener, you can completely skip it), give it a swirl and serve.</li>
+            <li>Serve Green tea recipe with a snack like Baked Aloo Tikki Recipe and Dhaniya Pudina Chutney Recipe (Green Chutney) during evenings.</li>
+
+        </ol>
+
+
+    </div>
+
+    <div data-role="footer"data-position="fixed" data-id="foot">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="Home.html" data-icon="home" rel="external" >Home</a></li>
+                <li><a href="Favorits.html" data-icon="heart" rel="external" >Favorites</a></li>
+                <li><a href="MyCalendar.html" data-icon="calendar" rel="external">My Calendar</a></li>
+                <li><a href="Preferences.html" data-icon="gear" rel="external">Preferences</a></li>
+            </ul>
+        </div>
+    </div>
+    <a  class="ui-btn" onclick="OpenBrowser()">See video</a>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+     function OpenBrowser() {
+        var ref = cordova.InAppBrowser.open('https://www.youtube.com/watch?v=Abw4GlqxG8s', '_blank', 'location=yes');
+        }
+    </script>
+</div>
+
+</body>
+</html>

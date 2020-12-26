@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>favorits</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+
+    <div data-role="header">
+        <h1>Preferences</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <h2>About App</h2>
+        <p>As we know;</p>
+        <p>"Good food changes the mood"</p>
+        <p>We offer to you a lot of recipes:  cakes recipes, sweets recipes, hot drinks recipes, cold drinks recipes, entrees recipes, main dishes recipes.</p>
+        <p>All recipes with photo and simple and detailed instructions.</p>
+        <p>All recipes are easy to read and make.</p>
+        <p>In this application  you can leave feedback about this App!</p>
+        <p>Cook with pleasure!</p>
+        <hr>
+        <div id="notation">
+            <form>
+                <label class="select"><h2> User Rating</h2></label>
+                <select name="note_utilisateur" id="note_utilisateur" data-native-menu="false" data-theme="b" data-icon="star">
+                    <option value="one" class="one"> Catastrophic </option>
+                    <option value="two" class="two">Medium </option>
+                    <option value="three" class="three">Good enough</option>
+                    <option value="four" class="four"> Excellent </option>
+                </select>
+            </form>
+            <script type="text/javascript">
+
+
+
+		$('#note_utilisateur').live('change', function(){
+			$('div.ui-select').removeClass(SelectedOptionClass);
+
+			SelectedOptionClass = $('option:selected').attr('class');
+			$('div.ui-select').addClass(SelectedOptionClass);
+
+		 });
+
+
+	});
+
+	</script>
+        </div>
+
+    </div>
+
+
+    <div data-role="footer"data-position="fixed" data-id="foot">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="Home.html" data-icon="home" rel="external" >Home</a></li>
+                <li><a href="Favorits.html" data-icon="heart" rel="external" >Favorites</a></li>
+                <li><a href="MyCalendar.html" data-icon="calendar" rel="external">My Calendar</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

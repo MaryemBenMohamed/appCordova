@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crepe </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header" >
+        <h1>Crepe </h1>
+        <a href="Breakfast.html" rel="external" data-icon="back">Back</a>
+
+    </div>
+    <div role="main" class="ui-content">
+        <img src="img/crepe.jpg" style="width:100%" >
+        <h1>Ingredient</h1>
+        <hr>
+        <ul data-role="listview" data-inset="true">
+            <li>300 g flour</li>
+            <li>3 whole eggs</li>
+            <li>3 tablespoons of sugar</li>
+            <li>2 tablespoons of oil</li>
+            <li>50 g melted butter</li>
+            <li>60 cl of milk</li>
+
+        </ul>
+
+        <h1>Preparation steps</h1>
+        <hr>
+        <ol data-role="none" data-autodividers="false">
+            <li>Put the flour in a bowl and form a well</li>
+            <li>Add the whole eggs, sugar, oil and butter</li>
+            <li>
+                Mix delicately with a whisk, gradually adding the milk. The dough thus obtained should have a consistency of a slightly thick liquid</li>
+            <li>Heat a non-stick pan and lightly oil it. Pour in a ladle of dough, distribute it in the pan and wait until it is cooked on one side before turning it over. Cook all the pancakes over low heat.</li>
+
+
+        </ol>
+    </div>
+
+    <div data-role="footer"data-position="fixed" data-id="foot">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="Home.html" data-icon="home" rel="external" >Home</a></li>
+                <li><a href="Favorits.html" data-icon="heart" rel="external" >Favorites</a></li>
+                <li><a href="MyCalendar.html" data-icon="calendar" rel="external">My Calendar</a></li>
+                <li><a href="Preferences.html" data-icon="gear" rel="external">Preferences</a></li>
+            </ul>
+        </div>
+    </div>
+    <a  class="ui-btn" onclick="OpenBrowser()">See video</a>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+     function OpenBrowser() {
+        var ref = cordova.InAppBrowser.open('https://www.youtube.com/watch?v=bX6ghyT6Ig0', '_blank', 'location=yes');
+        }
+    </script>
+</div>
+
+</body>
+</html>

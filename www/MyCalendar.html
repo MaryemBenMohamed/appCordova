@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calendar</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Simple Modern-looking Event Calendar Plugin">
+    <meta name="keywords" content="jQuery, Plugin, Event, Calendar, EvoCalendar">
+    <meta name="author" content="Edlyn Villegas">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/evo-calendar.min.css">
+    <link rel="stylesheet" type="text/css" href="css/evo-calendar.orange-coral.min.css">
+    <link rel="stylesheet" type="text/css" href="css/evo-calendar.midnight-blue.min.css">
+    <link rel="stylesheet" type="text/css" href="css/evo-calendar.royal-navy.min.css">
+    <link rel="stylesheet" type="text/css" href="demo/demo.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+</header>
+<main>
+    <div class="main-container">
+
+        <section id="demos">
+            <div class="section-content">
+                <div class="action-buttons" data-role="controlgroup" data-type="horizontal">
+                    <button class="btn-action active" data-set-theme="Default">DEFAULT</button>
+                    <button class="btn-action" data-set-theme="Midnight Blue">MIDNIGHT BLUE</button>
+                    <button class="btn-action" data-set-theme="Royal Navy">ROYAL NAVY</button>
+                    <button class="btn-action" data-set-theme="Orange Coral">ORANGE CORAL</button>
+                </div>
+                <div class="console-log">
+                    <div class="log-content">
+                        <div class="--noshadow" id="demoEvoCalendar"></div>
+                    </div>
+                </div>
+                <div class="action-buttons" data-role="controlgroup" data-type="horizontal">
+                    <button class="btn-action" id="addBtn">ADD EVENT</button>
+                    <button class="btn-action" id="removeBtn" disabled>REMOVE EVENT</button>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+</main>
+<div data-role="footer"data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="Home.html" data-icon="home" rel="external" >Home</a></li>
+            <li><a href="Favorits.html" data-icon="heart" rel="external" >Favorites</a></li>
+            <li><a href="Preferences.html" data-icon="gear" rel="external">Preferences</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="js/evo-calendar.min.js"></script>
+<script src="demo/demo.js"></script>
+</body>
+</html>

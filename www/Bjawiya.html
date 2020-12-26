@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bjawiya </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header" >
+        <h1>Bjawiya </h1>
+        <a href="Traditionals.html" rel="external" data-icon="back">Back</a>
+
+    </div>
+    <div role="main" class="ui-content">
+        <img src="img/bjawiya.jpg" style="width:100%" >
+        <h1>Ingredient</h1>
+        <hr>
+        <ul data-role="listview" data-inset="true">
+            <li>150 grams of blanched almonds</li>
+            <li>50 grams of hazelnuts</li>
+            <li>50 grams of walnut kernels</li>
+            <li>25 grams of pine nuts</li>
+            <li>20 grams of pistachios</li>
+            <li>1 tablespoon of oil</li>
+            <li>150 grams of caster sugar</li>
+            <li>Half a lemon</li>
+            <li>1 sachet of vanilla sugar</li>
+            <li>Powdered pistachios and pine nuts for garnish</li>
+
+        </ul>
+
+        <div data-role="content">
+            <h1>Preparation steps</h1>
+            <hr>
+            <ol data-role="none" data-autodividers="false">
+                <li>Prepare the dried fruits separately by placing in the oven at 140 ° C, the hazelnuts for about 20 min, the almonds for 15 min, then the walnuts for 5 min. Remove the skin from the roasted hazelnuts.
+                    Coarsely crush the almonds, walnuts, hazelnuts, pistachios and pine nuts.</li>
+                <li>Squeeze half a lemon and reserve it for the syrup.</li>
+                <li>To make the syrup, cook the sugar with 10 cl of water. When boiling, add the lemon juice. Check the doneness by plunging the blade of a knife into cold water, remove a little sugar, put the blade back into the water.</li>
+                <li>
+                    Then slide your finger over the sugar to obtain a pearl.</li>
+                <li>Syrup is poured over the crushed dried fruits and mixed with a wooden spatula.</li>
+                <li>Lightly oil the work surface and the rolling pin, place the Bjaouia and flatten it. Repeat the operation on a plate.</li>
+                <li>On the baking sheet, cut large strips of Bjawia and shape them into a square.</li>
+                <li>For the decoration, delicately immerse the surface of the latter in the pistachio powder.</li>
+                <li>
+                    At the end, add a pinion on top then arrange the pieces of Bjawia in a dish</li>
+
+
+            </ol>
+        </div>
+
+        <div data-role="footer"data-position="fixed" data-id="foot">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="Home.html" data-icon="home" rel="external" >Home</a></li>
+                    <li><a href="Favorits.html" data-icon="heart" rel="external" >Favorites</a></li>
+                    <li><a href="MyCalendar.html" data-icon="calendar" rel="external">My Calendar</a></li>
+                    <li><a href="Preferences.html" data-icon="gear" rel="external">Preferences</a></li>
+                </ul>
+            </div>
+        </div>
+        <a  class="ui-btn" onclick="OpenBrowser()">See video</a>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript">
+     function OpenBrowser() {
+        var ref = cordova.InAppBrowser.open('https://www.youtube.com/watch?v=ODaOd_lKTD8&ab_channel=AsmaBakloutiRecipes', '_blank', 'location=yes');
+        }
+    </script>
+    </div>
+
+</body>
+</html>

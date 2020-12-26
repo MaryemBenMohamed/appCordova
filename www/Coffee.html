@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coffee</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header">
+        <h1>Coffee</h1>
+        <a href="Hot_Drinks.html" rel="external" data-icon="back">Back</a>
+    </div>
+    <div role="main" class="ui-content">
+        <img src="img/coffee.jpg" style="width:100%" >
+        <h1>Ingredient</h1>
+        <hr>
+        <ul data-role="listview" data-inset="true">
+
+            <li>Water</li>
+            <li>Sugar</li>
+            <li>Turkish coffee (very very fine ground Arabica)t</li>
+
+        </ul>
+
+        <h1>Preparation steps</h1>
+        <hr>
+        <ol data-role="none" data-autodividers="false">
+            <li>Dose the water by filling each cup with water, then pour the water into the Turkish coffee maker. Use espresso mugs or Turkish coffee mugs.</li>
+            <li>Add the coffee to the coffee maker, as well as the sugar. Mix and bring everything to a boil, stirring regularly.</li>
+            <li>When a foam forms on top, remove the coffee maker from the heat and very gently pour the coffee against the rim of the cup, filling it only with liquid, leaving the coffee grounds at the bottom.</li>
+            <li>Put the coffee maker back on the heat, wait for the foam to reform and repeat the operation. In general it takes 2 to 3 such operations to fill the cups, before serving.</li>
+
+        </ol>
+
+
+    </div>
+
+    <div data-role="footer"data-position="fixed" data-id="foot">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="Home.html" data-icon="home" rel="external" >Home</a></li>
+                <li><a href="Favorits.html" data-icon="heart" rel="external" >Favorites</a></li>
+                <li><a href="MyCalendar.html" data-icon="calendar" rel="external">My Calendar</a></li>
+                <li><a href="Preferences.html" data-icon="gear" rel="external">Preferences</a></li>
+            </ul>
+        </div>
+    </div>
+    <a  class="ui-btn" onclick="OpenBrowser()">See video</a>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+     function OpenBrowser() {
+        var ref = cordova.InAppBrowser.open('https://www.youtube.com/watch?v=vFtE76sBRpc', '_blank', 'location=yes');
+        }
+    </script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Croissant </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+
+    <div data-role="header" >
+        <h1>Croissant </h1>
+        <a href="Breakfast.html" rel="external" data-icon="back">Back</a>
+
+    </div>
+    <div role="main" class="ui-content">
+        <img src="img/croissant.jpg" style="width:100%" >
+        <h1>Ingredient</h1>
+        <hr>
+        <ul data-role="listview" data-inset="true">
+            <li>500 g flour</li>
+            <li>25 g baker's yeast</li>
+            <li>25 cl of milkr</li>
+            <li>15 g of salt</li>
+            <li>1 glass of hot water</li>
+            <li>50 g sugar</li>
+            <li>200 g semi-soft butter (must have the same consistency as the dough)</li>
+
+        </ul>
+
+        <h1>Preparation steps</h1>
+        <hr>
+        <ol data-role="none" data-autodividers="false">
+            <li>Mix the yeast with hot water. Pour over 1/4 of the flour. Beat well, let rise for 15 minutes.</li>
+            <li>Add the rest of the flour, sugar, salt and hot milk. Mix well. The dough should be elastic and no longer stick. Finish the kneading on the table.</li>
+            <li>Roll out into a square. Add the butter in the center and close the 4 sides of the dough (like an envelope on the butter). Roll out lengthwise. (give a ride).</li>
+            <li>Fold in three. Leave to rest for 15 minutes.</li>
+            <li>Make the croissants. Cut the dough into 10cm x 15cm x 15cm triangles. Moisten lightly with cold water. Roll starting from the base. For my part, I use a system that I learned at the Hotel School to know how many turns I have given: I press / mark the dough with one finger (1 turn), 2 fingers (2 turns), etc. . I give in all 4 to 5 turns.</li>
+            <li>Make 10cm x 15cm x 15cm triangles. Lightly moisten with cold water, then brown with egg.</li>
+            <li>Let rise for an hour. Bake at 200-210 ° C for 10 to 15 minutes until golden brown.</li>
+
+        </ol>
+    </div>
+
+    <div data-role="footer"data-position="fixed" data-id="foot">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="Home.html" data-icon="home" rel="external" >Home</a></li>
+                <li><a href="Favorits.html" data-icon="heart" rel="external" >Favorites</a></li>
+                <li><a href="MyCalendar.html" data-icon="calendar" rel="external">My Calendar</a></li>
+                <li><a href="Preferences.html" data-icon="gear" rel="external">Preferences</a></li>
+            </ul>
+        </div>
+    </div>
+    <a  class="ui-btn" onclick="OpenBrowser()">See video</a>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+     function OpenBrowser() {
+        var ref = cordova.InAppBrowser.open('https://www.youtube.com/watch?v=tzSEfVdxRDw', '_blank', 'location=yes');
+        }
+    </script>
+</div>
+
+</body>
+</html>
