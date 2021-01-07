@@ -27,16 +27,18 @@
 <body>
 <header>
 </header>
-<main>
-    <div class="main-container">
 
+<div data-role="page">
+<div role="main" class="ui-content">
         <section id="demos">
             <div class="section-content">
-                <div class="action-buttons" data-role="controlgroup" data-type="horizontal">
+                <div class="action-buttons" data-role="controlgroup" data-position="fixed">
+
                     <button class="btn-action active" data-set-theme="Default">DEFAULT</button>
                     <button class="btn-action" data-set-theme="Midnight Blue">MIDNIGHT BLUE</button>
                     <button class="btn-action" data-set-theme="Royal Navy">ROYAL NAVY</button>
                     <button class="btn-action" data-set-theme="Orange Coral">ORANGE CORAL</button>
+
                 </div>
                 <div class="console-log">
                     <div class="log-content">
@@ -49,11 +51,11 @@
                 </div>
             </div>
         </section>
+</div>
 
 
 
-    </div>
-</main>
+
 <div data-role="footer"data-position="fixed" data-id="foot">
     <div data-role="navbar">
         <ul>
@@ -63,6 +65,8 @@
         </ul>
     </div>
 </div>
+</div>
+
 
 <!-- jQuery -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
